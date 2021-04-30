@@ -13,7 +13,6 @@ const request = supertest(prop.domainUrlPreprod);
 var group_id;
 
 describe ("Discussion APIs functional tests", () =>{
-    var group_id;
     
     //Create Group
     it ('/POST, Create group API functional tests' ,(done) => {
@@ -50,4 +49,4 @@ describe ("Discussion APIs functional tests", () =>{
 
         done();
     })
-})v
+})
