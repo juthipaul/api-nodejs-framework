@@ -5,7 +5,7 @@ import {it} from 'mocha';
 
 var path = require ("../resources/paths.js");
 var prop = require ("../resources/globalProperties.js");
-var disc = require ("../payload/GroupCreate.js");
+var disc = require ("../payload/groupCreate.js");
 var forumread = require("../payload/forumRead");
 
 //Create a group
