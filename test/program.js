@@ -9,7 +9,6 @@ var programs = require ("../payload/programCreatePayload.js");
 var programList = require ("../payload/programListPayload.js");
 
 
-//console.log(prop.domainUrl);
 const request = supertest(prop.domainUrl);
 var program_id;
 
