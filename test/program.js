@@ -8,12 +8,13 @@ var payload = require ("../payload/payloads.js");
 var programs = require ("../payload/programCreatePayload.js");
 var programList = require ("../payload/programListPayload.js");
 
-
 const request = supertest(prop.domainUrl);
 var program_id;
 
-//Program Create
-describe.skip ("Program APIs Scenarios" , () => {
+
+describe ("Program APIs Scenarios" , () => {
+
+    //Program Create API
     it ('/POST Program create API' , (done) => {
         request.post(path.programCreate)
         .set('Authorization', prop.authKey)
@@ -30,7 +31,8 @@ describe.skip ("Program APIs Scenarios" , () => {
             done();
          })
     });
-
+    
+    //Program Read API
     it ('/GET Read Program API' , (done)=> {
     
         request.get(path.contentReadPath+program_id)
@@ -45,7 +47,8 @@ describe.skip ("Program APIs Scenarios" , () => {
         })
         
     });
-
+    
+    //Program List API
     it ('/POST Program List API' , (done) => {
         request.post(path.programList)
         .set('Authorization', prop.authKey)
